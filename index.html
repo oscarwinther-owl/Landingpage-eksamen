@@ -16,7 +16,7 @@
             <a href="index.html"> <img src="img/logo.png" alt="pulse-logo" class="pulse-logo"></a>
             <nav class="navbar top-nav">
                 <ul class="nav">
-                    <li><a id="box1" href="#">Buy Now</a></li>
+                    <li><button id="cta-topnav" href="#">Buy Now</button></li>
                     <li><a href="#"><img src="img/kurv.png" alt="Indkøbskurv"></a></li>
                     <li><a href="#"><img src="img/sog.png" alt="Søg"></a></li>
                     <li><a href="#"><img src="img/person.png" alt="Profil"></a></li>
@@ -33,7 +33,7 @@
                     <p id="herosektion-beskrivende-tekst">Et intelligent og stilrent fitnessarmbånd, der giver dig fuldt overblik over træning, restitution og dagligaktivitet - med maksimal komfort og høj brugervenlighed. </p>
                 </div>
                 <div class="hero-cta">
-                    <button id="box2">Buy now</button>
+                    <button id="cta-hero">Buy now</button>
                     <div class="hero-trustpilot">
                         <span>4,8/5</span>
                         <img class="trustpilotstar" src="img/trustpilot-star.png" alt="">
@@ -44,7 +44,9 @@
                 
         </section>
         <section class="hero-right">
-            <img id="watch" src="img/watch.png" alt="watch">
+            <div id="watch-glow">
+                <img id="watch" src="img/watch.png" alt="watch">
+            </div>
         </section>
     </section>
 
@@ -83,31 +85,36 @@
 
 
 <!-- ================= Funktioner ================= -->
- <h2 id="Funktioner">Funktioner</h2>
-<section class="funktioner-tekst-billede">
-        
-    <div class="feature-tekst">
-        <h2>Forstå din søvn</h2>
-        <p>  Få et klart overblik over din søvn. Sportsuret registrerer din søvnlængde, søvnfaser og natlige opvågninger.</p>
-        <p>Brug dine data til at optimere dine søvnvaner, din træning og dit energiniveau.</p>
-        <br>
-        <ul>
-            <li>Samlet søvntid</li> 
-            <li>Let, dyb og rem søvn</li> 
-            <li>Natlige opvågninger</li> 
-            <li>Personlig søvnscore</li> 
-        </ul>
-        
-    </div>
-
-    <div class="funktion-box">
-        <img src="img/watch2.png" alt="Pulse Core funktioner" >
-        <div class="feature-image">
+<h2 id="Funktioner">Funktioner</h2>
+    <section class="boks-med-pile">
+    <svg id="pil-venstre" xmlns="http://www.w3.org/2000/svg" width="14" height="21" viewBox="0 0 14 21" fill="none">
+    <path d="M11.7109 1.5L1.86296 9.63529C1.3788 10.0352 1.3788 10.7773 1.86296 11.1772L11.7109 19.3125" stroke-width="3" stroke-linecap="round" stroke="white"/>
+    </svg>
+    <section class="funktioner-tekst-billede">
+    
+        <div class="funktion-box">
+                <img src="img/watch2.png" alt="Pulse Core funktioner" >
         </div>
-    </div>
-</section>
+        <div class="feature-tekst">
+            <h2 id="søvn-overskrift">Forstå din søvn</h2>
+            <div id="søvn-tekst">
+                <p>  Få et klart overblik over din søvn. Sportsuret registrerer din søvnlængde, søvnfaser og natlige opvågninger. Brug dine data til at optimere dine søvnvaner, din træning og dit energiniveau.</p>
+                <br>
+                <ul>
+                    <li>Samlet søvntid</li> 
+                    <li>Let, dyb og rem søvn</li> 
+                    <li>Natlige opvågninger</li> 
+                    <li>Personlig søvnscore</li> 
+                </ul>
+            </div>
+        </div>
 
-
+        
+    </section>
+    <svg id="pil-højre" xmlns="http://www.w3.org/2000/svg" width="14" height="21" viewBox="0 0 14 21" fill="none">
+    <path d="M1.5 1.5L11.348 9.63529C11.8321 10.0352 11.8321 10.7773 11.348 11.1772L1.5 19.3125" stroke-width="3" stroke-linecap="round" stroke="white"/>
+    </svg>
+    </section>
 <!-- ================= App ================= -->
 <section>
     <!-- <h5>New app</h5> -->
