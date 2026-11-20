@@ -43,7 +43,6 @@ p{
 background-image: url("../img/herosection.png");
 background-size: cover;
 background-repeat: no-repeat;
-background-attachment: fixed;
 background-position: center;
 display: flex;
 align-items: center;
@@ -165,15 +164,13 @@ justify-content: center;
     border-color: var(--secondary-conlor);
 }
 
-h1{
-
+h1
+{
     color: white;
     font-family:var(--font-family);
     font-size: 64px;
     font-weight: 400;
     line-height: 51px;
-
-   
 }
 
 h2{
@@ -203,19 +200,17 @@ border-radius: 20px;
 font-family:var(--font-family);
 font-size: 15px;
 color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
-.logo {
+.logo
+{
     position: absolute;
-
     top: 30px;
     left: 40px;
-
     width: 140px;
-
     z-index: 10;
 }
 
@@ -259,10 +254,7 @@ margin-top: -17px;
 /* ================= PRODUCTS ================= */
 .products
 {
-    /* padding: 50px;
-    margin:36px;
-    margin-top: 200px; */
-    margin-bottom:200px;
+    margin:50px 100px 0px 100px;
     background: linear-gradient(
         120deg,
         #555,
@@ -368,98 +360,142 @@ article {
 
 
 /* ================= Funktioner ================= */
-#Funktioner
-{
-        /* background-color: var(--primary-color); */
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
-    /* align-items: flex-start; */
-    margin-left: 150px;
-    margin-bottom: -51px;
+/* ================= Funktioner ================= */
+.funktioner-sektion {
+    max-width: 1150px;
+    margin: 120px auto;
+    padding: 0 20px;
+}
+
+#Funktioner {
+    margin-left: 74px;
+    margin-bottom: 24px;
     font-size: 35px;
 }
-#pil-venstre
-{
-    display: flex;
-width: 50px;
-height: 50px;
-padding: 16px 20px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-border-radius: 99px;
-background: #000;
-}
-#pil-højre
-{
-    display: flex;
-width: 50px;
-height: 50px;
-padding: 16px 20px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-border-radius: 99px;
-background: #000;
-}
-.feature-tekst
-{
-display: flex;
-width: 307px;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-gap: 16px;
-}
 
-.funktioner-tekst-billede
-{
-    background: linear-gradient(120deg, #555, #292626);
-    display: flex;
-    gap: 106px;
-    align-items: center;
-    margin: 5% 24px;
-    border-radius: 46px;
-    padding: 5% 0% 5% 0%;
-    justify-content:center;
-    max-width: 814px;
-}
-.funktion-box img
-{
-display: flex;
-height: 308px;
-width: 300px;
-
-}
-.feature-tekst ul {
-    color: #ffffff;
-}
-
-#søvn-overskrift
-{
-    color: #FFF;
-font-family: Inter;
-font-size: 32px;
-font-style: normal;
-font-weight: 400;
-line-height: 51px;
-}
-
-#søvn-tekst
-{
-color: #FFF;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-.boks-med-pile
-{
+.boks-med-pile {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 24px;
+}
+
+#pil-venstre,
+#pil-højre {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding: 16px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 99px;
+    background: #000;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+#pil-venstre:hover,
+#pil-højre:hover {
+    background-color: var(--secondary-conlor);
+    transform: scale(1.08);
+}
+
+/* Vinduet (Clip content) */
+.carousel-window {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 46px;
+}
+
+/* Rækken af alle 4 kort */
+.carousel-track {
+    display: flex;
+    gap: 24px;
+    transition: transform 0.45s ease-in-out;
+}
+
+/* Hvert enkelt kort fylder 88%, så næste kort kigger frem (Peeking) */
+.funktioner-tekst-billede {
+    flex: 0 0 88%;
+    margin: 0; /* Nulstiller den generelle article-margin */
+    background: linear-gradient(120deg, #555, #292626);
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 46px;
+    padding: 50px 60px;
+}
+
+/* Bytter side på ur og tekst på kort 2 og 4 */
+.funktioner-tekst-billede.omvendt-kort {
+    flex-direction: row-reverse;
+}
+
+.funktion-box img {
+    display: block;
+    height: 308px;
+    width: 300px;
+    object-fit: contain;
+}
+
+.feature-tekst {
+    display: flex;
+    width: 360px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.feature-tekst ul {
+    color: #ffffff;
+    margin-left: 20px;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+}
+
+.funktion-overskrift {
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.funktion-beskrivelse {
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* Prikkerne i bunden */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #7d797a;
+    border: none;
+    cursor: pointer;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.dot.active {
+    width: 32px;
+    border-radius: 10px;
+    background-color: var(--white);
 }
 /* ================= App ================= */
 
