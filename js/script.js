@@ -63,3 +63,8 @@ document.addEventListener('click', (event) => {
         farveOverlay.classList.remove('aktiv');
     }
 });
+
+
+
+
+// Den valgte farve flyver op i kurven animation
