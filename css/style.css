@@ -632,7 +632,7 @@ h5
 {
     color: #FFF;
     font-family: Inter;
-    font-size: 15px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 22px; /* 146.667% */
@@ -661,6 +661,7 @@ h5
 {
 width: 260px;
 height: 132px;
+font-size: 18px;
 }
 
 #app-boks-tekst-nederst
@@ -694,6 +695,12 @@ width: 325px;
 
     
 /* ================= Snoet linje med appens funktioner ================= */
+
+#snoet-linje
+{
+    position: absolute;
+    left: 15%;
+}
 
 .feature{
    min-height: 300px;
