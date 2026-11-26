@@ -600,9 +600,11 @@ h3{
 #app-tekst-box
 {
     background: linear-gradient(120deg, #555, #292626);
-    margin: 0% 5% 10% 15%;
     padding: 20% 7% 10% 7%;
     border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
 }
 
 #app-overskrift
@@ -661,10 +663,33 @@ width: 260px;
 height: 132px;
 }
 
-.app-boks-tekst-nederst
+#app-boks-tekst-nederst
 {
     display: flex;
-    align-items: row;
+    align-items: center;
+    gap: 42px;
+    align-self: stretch;
+}
+
+#app-download
+{
+background-color: var(--secondary-conlor);
+color: #FFF;
+font-family: Michroma;
+font-size: 20px;
+font-weight: 400;
+padding: 15px;
+border-radius: 15px;
+border:none;
+width: 325px;
+}
+#app-download:hover{
+    transform: scale(1.04);
+    filter: brightness(1.08);
+}
+#app-tekst-nederst
+{
+    width: 300px;
 }
 
     
